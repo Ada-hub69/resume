@@ -137,7 +137,7 @@ body { font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif; background: #
             <div class="project">
                 <div class="project-title">🏭 同海SF安全生产数字化平台 · 容器化部署与运维</div>
                 <div class="project-sub">中煤集团 · Docker · QEMU · DM8 · Nacos · Spring Cloud</div>
-                <p style="font-size:12px;color:#555;line-height:1.6;margin:6px 0 4px 0;padding:0 4px;">项目背景：中煤集团安全生产数字化平台（两票管理系统）基于Spring Cloud Alibaba微服务架构，含7个核心微服务模块，需部署于CentOS 9 x86_64服务器。官方仅提供ARM64架构镜像，存在跨架构兼容挑战，需在不更换硬件的前提下完成容器化适配。</p>
+                <p style="font-size:12px;color:#555;line-height:1.6;margin:6px 0 4px 0;padding:0 4px;">项目背景：基于国际Safety规范开发的SaaS智能化工业级ERP系统，深度融合Safety、工作票（WPT）、操作票（OPT）三大核心模块，实现工业设备资产全生命周期数字化管理。系统基于Spring Cloud Alibaba微服务架构，含7个核心微服务模块，部署于CentOS 9 x86_64服务器。官方仅提供ARM64架构镜像，需通过QEMU跨架构虚拟化完成容器化适配。</p>
                 <ul>
                     <li><strong>跨架构容器化</strong>：ARM64镜像→x86_64服务器，引入QEMU用户态模拟实现透明转换，7个核心微服务全部正常运行</li>
                     <li>编写生产级 docker-compose.yml，实现服务依赖链管理、健康检查探针、持久化存储卷</li>
